@@ -20,9 +20,13 @@ from rest_framework import routers
 
 from .views import UserViewSet, GroupViewSet
 
+from core.views import ListViewSet, ItemViewSet
+
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
+router.register(r'lists', ListViewSet, basename='list')
+router.register(r'item', ItemViewSet)
 
 urlpatterns = [
     path('', include(router.urls)), # Include the router URLs
