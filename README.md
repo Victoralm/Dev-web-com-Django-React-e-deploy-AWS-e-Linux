@@ -36,3 +36,22 @@ pip install djangorestframework
 pip install markdown       # Markdown support for the browsable API.
 pip install django-filter  # Filtering support
 ```
+
+[Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
+
+```bash
+python manage.py migrate
+python manage.py createsuperuser --username admin --email admin@example.com
+```
+
+#### Serializers
+
+São como os arquivos POCO em .Net. Definem as entidades que serão utilizadas no projeto.
+
+#### Views
+
+Definem como as entidades serão retornadas, endpoints.
+
+#### Testando os endpoints
+
+Sendo necessário autenticação, usa-se a url: http://127.0.0.1:8000/admin/
