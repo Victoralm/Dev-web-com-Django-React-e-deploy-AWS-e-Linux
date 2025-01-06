@@ -185,3 +185,5 @@ class ListSerializer(serializers.HyperlinkedModelSerializer):
         # fields = '__all__'
         fields = ['name', 'owner', 'url', 'item_set'] # Incluindo o campo item_set
 ```
+
+Notar que não será possível criar uma nova lista diretamente pelo endpoint, por conta do `Writable Nested Serializers`. Somente pelo painel de admin do Django Rest Framework...
