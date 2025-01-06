@@ -16,12 +16,24 @@ npm start
 
 ## Django
 
+### Exibindo pacotes instalados na venv
+
+```bash
+pip freeze
+```
+
+#### Enviando a lista de pacotes instalados para o requirements.txt
+
+```bash
+pip freeze > requirements.txt
+```
+
 ### Criando um novo app Django 4.2
 
 Dei preferencia por criar uma nova venv Python e instalar o Django 4.2 nela:
 
 ```bash
-#Com a venv já ativada
+# Com a venv já ativada:
 pip install django==4.2
 django-admin startproject <nome_para_o_projeto> .
 python manage.py runserver
